@@ -14,4 +14,8 @@ class _LoginScreenState extends State<LoginScreen> {
       appBar: AppBar(),
     );
   }
+
+  void getResultFromOpenAi() {
+    askQuestion("What is the best cloud solution");
+  }
 }
