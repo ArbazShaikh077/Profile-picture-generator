@@ -26,7 +26,7 @@ Future<Response> askQuestion(String question) async {
 }
 
 // Example usage
-void main() async {
+void example() async {
   final response = await askQuestion("What is the capital of France?");
   print(response.data);
 }
