@@ -5,4 +5,5 @@ class AppStrings {
   static const String speakToConvert = "Speak to get you answer";
   static const String pleaseWait = "Please wait while processing";
   static const String processing = "Please while processing";
+  static const String enterTheText = "Please ask the question";
 }
