@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_picture_generator/core/network/api_handler.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -12,7 +13,11 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(),
-      bottomNavigationBar: TextFormField(),
+      bottomNavigationBar: TextFormField(
+        onChanged: (String value) {
+          askQuestion(value);
+        },
+      ),
     );
   }
 }
