@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:profile_picture_generator/core/network/api_handler.dart';
 
@@ -9,13 +11,16 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  var answer;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: Center(
+        child: Text(answer),
+      ),
       bottomNavigationBar: TextFormField(
         onChanged: (String value) {
-          askQuestion(value);
+          answer = askQuestion(value);
         },
       ),
     );
