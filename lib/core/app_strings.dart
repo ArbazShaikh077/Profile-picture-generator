@@ -6,4 +6,5 @@ class AppStrings {
   static const String pleaseWait = "Please wait while processing";
   static const String processing = "Please while processing";
   static const String enterTheText = "Please ask the question";
+  static const String loadingText = "Wait, while loading....";
 }
